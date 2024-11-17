@@ -17,7 +17,7 @@ def split_subsectors(merged_df):
     column_names = merged_df.columns
     perc_cols = column_names[3:]
     for col in perc_cols:
-        merged_df[col] = 100 * merged_df[col].apply(lambda x: round(x, 4))
+        merged_df[col] = merged_df[col].apply(lambda x: round(x, 4))
 
     subsec_list = merged_df["Sub-Sector"].unique()
     subsec_dfs = []
