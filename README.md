@@ -29,7 +29,7 @@ The Market Sector Price Movement (MSPM) is a project designed to automate the da
 5. Ensure the Input Files for the process are in the Input Folder specified in `src/config/config.py`. The files should follow the following template:-
    * Files should follow the naming convention - `Price_filter_<DD_MM_YYYY>.xlsx`. For Example - `Price_filter_01_01_2023.xlsx`
    * Each xlsx should containa worksheet named `SubSector Analysis` containing data for all subsectors.
-   * Refer to one sample Input file for reference.
+   * Refer to one sample Input file (at `data/input/`) for reference. 
    
 
 ## Usage
