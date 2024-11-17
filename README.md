@@ -26,6 +26,11 @@ The Market Sector Price Movement (MSPM) is a project designed to automate the da
    pip install -r requirements.txt
    ```
 4. Set the paths in `src/config/config.py` as per your local directory structure for Input Files, Tableau Data, and Report Output.
+5. Ensure the Input Files for the process are in the Input Folder specified in `src/config/config.py`. The files should follow the following template:-
+   * Files should follow the naming convention - `Price_filter_<DD_MM_YYYY>.xlsx`. For Example - `Price_filter_01_01_2023.xlsx`
+   * Each xlsx should containa worksheet named `SubSector Analysis` containing data for all subsectors.
+   * Refer to one sample Input file for reference.
+   
 
 ## Usage
 To execute the ETL pipeline and generate files for the dashboard:
